@@ -1,0 +1,34 @@
+<TextScreen>:
+    FloatLayout:
+        canvas:
+            Color:
+                rgb: utils.get_color_from_hex("#000000")
+            Rectangle:
+                size: self.size
+                pos: self.pos
+        Label:
+            pos_hint: {'top': 1, 'center_x': 0.5}
+            size_hint: 1, 1
+            id: text_label
+            text: 'nothing'
+        RoundedButton:
+            pos_hint: {'top': .9, 'left': .9}
+            size_hint: .1, .05
+            size_hint:
+            id: back_button
+            text: 'Back'
+            on_release:
+                app.change_screen('caution_panel_screen')
+
+<RoundedButton@Button>
+    background_color: (0,0,0,0)
+    background_normal: ''
+    back_color: (1,0,1,1)
+    border_radius: [5]
+    canvas.before:
+        Color:
+            rgb: utils.get_color_from_hex("#740000")
+        RoundedRectangle:
+            size: self.size
+            pos: self.pos
+            radius: [5]

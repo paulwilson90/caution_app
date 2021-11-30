@@ -1,0 +1,762 @@
+#:import utils kivy.utils
+<CautionPanelScreen>:
+    FloatLayout:
+        flt_data_recorder: flt_data_recorder.__self__
+        canvas:
+            Color:
+                rgb: utils.get_color_from_hex("#000000")
+            Rectangle:
+                size: self.size
+                pos: self.pos
+        GridLayout:  #################################### ROW 1 ################################
+            rows: 1
+            id: row_1
+            pos_hint: {"top": .9, "left": 1}
+            size_hint: 1, .08
+            spacing: 5, 5
+            ClearButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                opacity: 1 if self.state == 'normal' else .5
+                font_size: '12sp'
+                id: pri_inv
+                halign: 'center'
+                text: "[color=#FFF300]PRI INV[/color]"
+                on_release:
+                    app.change_screen('text_screen')
+                    app.get_text('aom_descriptions/pri_inv.txt')
+            ClearButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                opacity: 1 if self.state == 'normal' else .5
+                font_size: '12sp'
+                id: l_ac_bus
+                halign: 'center'
+                text: "[color=#FFF300]L AC BUS[/color]"
+            ClearButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                opacity: 1 if self.state == 'normal' else .5
+                font_size: '12sp'
+                id: emer_lts_disarmed
+                halign: 'center'
+                text: "[color=#FFF300]EMER LTS\nDISARMED[/color]"
+            ClearButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                text: ""
+            ClearButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                opacity: 1 if self.state == 'normal' else .5
+                font_size: '12sp'
+                id: one_hyd_fluid_hot
+                halign: 'center'
+                text: "[color=#FFF300]#1 HYD\nFLUID HOT[/color]"
+            ClearButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                opacity: 1 if self.state == 'normal' else .5
+                font_size: '12sp'
+                id: one_stby_hyd_pump_hot
+                halign: 'center'
+                text: "[color=#FFF300]#1 STBY HYD\nPUMP HOT[/color]"
+            ClearButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                opacity: 1 if self.state == 'normal' else .5
+                font_size: '12sp'
+                id: flt_comp_pack_hot
+                halign: 'center'
+                text: "[color=#FFF300]FLT COMPT-\nPACK HOT[/color]"
+            ClearButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                opacity: 1 if self.state == 'normal' else .5
+                font_size: '12sp'
+                id: one_eng_fuel_press
+                halign: 'center'
+                text: "[color=#FFF300]#1 ENG\nFUEL PRESS[/color]"
+            ClearButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                opacity: 1 if self.state == 'normal' else .5
+                font_size: '12sp'
+                id: two_eng_fuel_press
+                halign: 'center'
+                text: "[color=#FFF300]#2 ENG\nFUEL PRESS[/color]"
+            ClearButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                opacity: 1 if self.state == 'normal' else .5
+                font_size: '12sp'
+                id: alt_gear_ind_fail
+                halign: 'center'
+                text: "[color=#FFF300]ALT GEAR\nIND FAIL[/color]"
+            ClearButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                opacity: 1 if self.state == 'normal' else .5
+                font_size: '12sp'
+                id: rudd_press
+                halign: 'center'
+                text: "[color=#FFF300]RUD\nPRESS[/color]"
+            ClearButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                text: ""
+            ClearButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                opacity: 1 if self.state == 'normal' else .5
+                font_size: '12sp'
+                id: one_stall_syst_fail
+                halign: 'center'
+                text: "[color=#FFF300]#1 STALL\nSYST FAIL[/color]"
+                on_release:
+                    app.change_screen(text_screen)
+                    app.get_text('one_stall_syst_fail')
+
+            ClearButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                opacity: 1 if self.state == 'normal' else .5
+                font_size: '12sp'
+                id: flt_data_recorder
+                halign: 'center'
+                text: "[color=#FFF300]FLT DATA\nRECORDER[/color]"
+                on_release:
+                    app.change_screen('text_screen')
+                    app.get_text('aom_descriptions/flt_data_recorder.txt')
+        GridLayout:  #################################### ROW 2 ################################
+            rows: 1
+            id: row_1
+            pos_hint: {"top": .8, "left": 1}
+            size_hint: 1, .08
+            spacing: 5, 5
+            ClearButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                opacity: 1 if self.state == 'normal' else .5
+                font_size: '12sp'
+                halign: 'center'
+                text: "[color=#FFF300]SEC INV[/color]"
+            ClearButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                opacity: 1 if self.state == 'normal' else .5
+                font_size: '12sp'
+                halign: 'center'
+                text: "[color=#FFF300]R AC BUS[/color]"
+            ClearButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                opacity: 1 if self.state == 'normal' else .5
+                font_size: '12sp'
+                halign: 'center'
+                text: "[color=#FFF300]PITOT\nHEAT 1[/color]"
+            ClearButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                font_size: '12sp'
+                halign: 'center'
+                text: ""
+            ClearButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                opacity: 1 if self.state == 'normal' else .5
+                font_size: '12sp'
+                halign: 'center'
+                text: "[color=#FFF300]#2 HYD\nFLUID HOT[/color]"
+            ClearButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                opacity: 1 if self.state == 'normal' else .5
+                font_size: '12sp'
+                halign: 'center'
+                text: "[color=#FFF300]#2 STBY HYD\nPUMP HOT[/color]"
+            ClearButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                opacity: 1 if self.state == 'normal' else .5
+                font_size: '12sp'
+                halign: 'center'
+                text: "[color=#FFF300]#1 BLEED\nHOT[/color]"
+            ClearButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                opacity: 1 if self.state == 'normal' else .5
+                font_size: '12sp'
+                halign: 'center'
+                text: "[color=#FFF300]#1 ENG\nHYD PUMP[/color]"
+            ClearButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                opacity: 1 if self.state == 'normal' else .5
+                font_size: '12sp'
+                halign: 'center'
+                text: "[color=#FFF300]#2 ENG\nHYD PUMP[/color]"
+            ClearButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                opacity: 1 if self.state == 'normal' else .5
+                font_size: '12sp'
+                halign: 'center'
+                text: "[color=#FFF300]#2 BLEED\nHOT[/color]"
+            ClearButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                font_size: '12sp'
+                halign: 'center'
+                text: ""
+            ClearButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                opacity: 1 if self.state == 'normal' else .5
+                font_size: '12sp'
+                halign: 'center'
+                text: "[color=#FFF300]PUSHER\nSYST FAIL[/color]"
+            ClearButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                opacity: 1 if self.state == 'normal' else .5
+                font_size: '12sp'
+                halign: 'center'
+                text: "[color=#FFF300]#2 STALL\nSYST FAIL[/color]"
+            ClearButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                opacity: 1 if self.state == 'normal' else .5
+                font_size: '12sp'
+                halign: 'center'
+                text: "[color=#FFF300]GPWS[/color]"
+        GridLayout:  #################################### ROW 3 ################################
+            rows: 1
+            id: row_1
+            pos_hint: {"top": .7, "left": 1}
+            size_hint: 1, .08
+            spacing: 5, 5
+            ClearButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                opacity: 1 if self.state == 'normal' else .5
+                font_size: '12sp'
+                halign: 'center'
+                text: "[color=#FFF300]SEC INV[/color]"
+            ClearButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                opacity: 1 if self.state == 'normal' else .5
+                font_size: '12sp'
+                halign: 'center'
+                text: "[color=#FFF300]R AC BUS[/color]"
+            ClearButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                opacity: 1 if self.state == 'normal' else .5
+                font_size: '12sp'
+                halign: 'center'
+                text: "[color=#FFF300]PITOT\nHEAT 1[/color]"
+            ClearButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                font_size: '12sp'
+                halign: 'center'
+                text: ""
+            ClearButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                opacity: 1 if self.state == 'normal' else .5
+                font_size: '12sp'
+                halign: 'center'
+                text: "[color=#FFF300]#2 HYD\nFLUID HOT[/color]"
+            ClearButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                opacity: 1 if self.state == 'normal' else .5
+                font_size: '12sp'
+                halign: 'center'
+                text: "[color=#FFF300]#2 STBY HYD\nPUMP HOT[/color]"
+            ClearButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                opacity: 1 if self.state == 'normal' else .5
+                font_size: '12sp'
+                halign: 'center'
+                text: "[color=#FFF300]#1 BLEED\nHOT[/color]"
+            ClearButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                opacity: 1 if self.state == 'normal' else .5
+                font_size: '12sp'
+                halign: 'center'
+                text: "[color=#FFF300]#1 ENG\nHYD PUMP[/color]"
+            ClearButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                opacity: 1 if self.state == 'normal' else .5
+                font_size: '12sp'
+                halign: 'center'
+                text: "[color=#FFF300]#2 ENG\nHYD PUMP[/color]"
+            ClearButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                opacity: 1 if self.state == 'normal' else .5
+                font_size: '12sp'
+                halign: 'center'
+                text: "[color=#FFF300]#2 BLEED\nHOT[/color]"
+            ClearButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                font_size: '12sp'
+                halign: 'center'
+                text: ""
+            ClearButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                opacity: 1 if self.state == 'normal' else .5
+                font_size: '12sp'
+                halign: 'center'
+                text: "[color=#FFF300]PUSHER\nSYST FAIL[/color]"
+            ClearButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                opacity: 1 if self.state == 'normal' else .5
+                font_size: '12sp'
+                halign: 'center'
+                text: "[color=#FFF300]#2 STALL\nSYST FAIL[/color]"
+            ClearButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                opacity: 1 if self.state == 'normal' else .5
+                font_size: '12sp'
+                halign: 'center'
+                text: "[color=#FFF300]GPWS[/color]"
+        GridLayout:  #################################### ROW 4 ################################
+            rows: 1
+            id: row_1
+            pos_hint: {"top": .6, "left": 1}
+            size_hint: 1, .08
+            spacing: 5, 5
+            ClearButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                opacity: 1 if self.state == 'normal' else .5
+                font_size: '12sp'
+                halign: 'center'
+                text: "[color=#FFF300]SEC INV[/color]"
+            ClearButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                opacity: 1 if self.state == 'normal' else .5
+                font_size: '12sp'
+                halign: 'center'
+                text: "[color=#FFF300]R AC BUS[/color]"
+            ClearButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                opacity: 1 if self.state == 'normal' else .5
+                font_size: '12sp'
+                halign: 'center'
+                text: "[color=#FFF300]PITOT\nHEAT 1[/color]"
+            ClearButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                font_size: '12sp'
+                halign: 'center'
+                text: ""
+            ClearButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                opacity: 1 if self.state == 'normal' else .5
+                font_size: '12sp'
+                halign: 'center'
+                text: "[color=#FFF300]#2 HYD\nFLUID HOT[/color]"
+            ClearButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                opacity: 1 if self.state == 'normal' else .5
+                font_size: '12sp'
+                halign: 'center'
+                text: "[color=#FFF300]#2 STBY HYD\nPUMP HOT[/color]"
+            ClearButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                opacity: 1 if self.state == 'normal' else .5
+                font_size: '12sp'
+                halign: 'center'
+                text: "[color=#FFF300]#1 BLEED\nHOT[/color]"
+            ClearButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                opacity: 1 if self.state == 'normal' else .5
+                font_size: '12sp'
+                halign: 'center'
+                text: "[color=#FFF300]#1 ENG\nHYD PUMP[/color]"
+            ClearButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                opacity: 1 if self.state == 'normal' else .5
+                font_size: '12sp'
+                halign: 'center'
+                text: "[color=#FFF300]#2 ENG\nHYD PUMP[/color]"
+            ClearButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                opacity: 1 if self.state == 'normal' else .5
+                font_size: '12sp'
+                halign: 'center'
+                text: "[color=#FFF300]#2 BLEED\nHOT[/color]"
+            ClearButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                font_size: '12sp'
+                halign: 'center'
+                text: ""
+            ClearButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                opacity: 1 if self.state == 'normal' else .5
+                font_size: '12sp'
+                halign: 'center'
+                text: "[color=#FFF300]PUSHER\nSYST FAIL[/color]"
+            ClearButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                opacity: 1 if self.state == 'normal' else .5
+                font_size: '12sp'
+                halign: 'center'
+                text: "[color=#FFF300]#2 STALL\nSYST FAIL[/color]"
+            ClearButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                opacity: 1 if self.state == 'normal' else .5
+                font_size: '12sp'
+                halign: 'center'
+                text: "[color=#FFF300]GPWS[/color]"
+        GridLayout:  #################################### ROW 5 ################################
+            rows: 1
+            id: row_1
+            pos_hint: {"top": .5, "left": 1}
+            size_hint: 1, .08
+            spacing: 5, 5
+            ClearButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                opacity: 1 if self.state == 'normal' else .5
+                font_size: '12sp'
+                halign: 'center'
+                text: "[color=#FFF300]SEC INV[/color]"
+            ClearButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                opacity: 1 if self.state == 'normal' else .5
+                font_size: '12sp'
+                halign: 'center'
+                text: "[color=#FFF300]R AC BUS[/color]"
+            ClearButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                opacity: 1 if self.state == 'normal' else .5
+                font_size: '12sp'
+                halign: 'center'
+                text: "[color=#FFF300]PITOT\nHEAT 1[/color]"
+            ClearButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                font_size: '12sp'
+                halign: 'center'
+                text: ""
+            ClearButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                opacity: 1 if self.state == 'normal' else .5
+                font_size: '12sp'
+                halign: 'center'
+                text: "[color=#FFF300]#2 HYD\nFLUID HOT[/color]"
+            ClearButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                opacity: 1 if self.state == 'normal' else .5
+                font_size: '12sp'
+                halign: 'center'
+                text: "[color=#FFF300]#2 STBY HYD\nPUMP HOT[/color]"
+            ClearButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                opacity: 1 if self.state == 'normal' else .5
+                font_size: '12sp'
+                halign: 'center'
+                text: "[color=#FFF300]#1 BLEED\nHOT[/color]"
+            ClearButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                opacity: 1 if self.state == 'normal' else .5
+                font_size: '12sp'
+                halign: 'center'
+                text: "[color=#FFF300]#1 ENG\nHYD PUMP[/color]"
+            ClearButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                opacity: 1 if self.state == 'normal' else .5
+                font_size: '12sp'
+                halign: 'center'
+                text: "[color=#FFF300]#2 ENG\nHYD PUMP[/color]"
+            ClearButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                opacity: 1 if self.state == 'normal' else .5
+                font_size: '12sp'
+                halign: 'center'
+                text: "[color=#FFF300]#2 BLEED\nHOT[/color]"
+            ClearButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                font_size: '12sp'
+                halign: 'center'
+                text: ""
+            ClearButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                opacity: 1 if self.state == 'normal' else .5
+                font_size: '12sp'
+                halign: 'center'
+                text: "[color=#FFF300]PUSHER\nSYST FAIL[/color]"
+            ClearButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                opacity: 1 if self.state == 'normal' else .5
+                font_size: '12sp'
+                halign: 'center'
+                text: "[color=#FFF300]#2 STALL\nSYST FAIL[/color]"
+            ClearButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                opacity: 1 if self.state == 'normal' else .5
+                font_size: '12sp'
+                halign: 'center'
+                text: "[color=#FFF300]GPWS[/color]"
+        GridLayout:  #################################### ROW 6 ################################
+            rows: 1
+            id: row_1
+            pos_hint: {"top": .4, "left": 1}
+            size_hint: 1, .08
+            spacing: 5, 5
+            ClearButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                opacity: 1 if self.state == 'normal' else .5
+                font_size: '12sp'
+                halign: 'center'
+                text: "[color=#FFF300]SEC INV[/color]"
+            ClearButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                opacity: 1 if self.state == 'normal' else .5
+                font_size: '12sp'
+                halign: 'center'
+                text: "[color=#FFF300]R AC BUS[/color]"
+            ClearButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                opacity: 1 if self.state == 'normal' else .5
+                font_size: '12sp'
+                halign: 'center'
+                text: "[color=#FFF300]PITOT\nHEAT 1[/color]"
+            ClearButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                font_size: '12sp'
+                halign: 'center'
+                text: ""
+            ClearButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                opacity: 1 if self.state == 'normal' else .5
+                font_size: '12sp'
+                halign: 'center'
+                text: "[color=#FFF300]#2 HYD\nFLUID HOT[/color]"
+            ClearButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                opacity: 1 if self.state == 'normal' else .5
+                font_size: '12sp'
+                halign: 'center'
+                text: "[color=#FFF300]#2 STBY HYD\nPUMP HOT[/color]"
+            ClearButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                opacity: 1 if self.state == 'normal' else .5
+                font_size: '12sp'
+                halign: 'center'
+                text: "[color=#FFF300]#1 BLEED\nHOT[/color]"
+            ClearButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                opacity: 1 if self.state == 'normal' else .5
+                font_size: '12sp'
+                halign: 'center'
+                text: "[color=#FFF300]#1 ENG\nHYD PUMP[/color]"
+            ClearButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                opacity: 1 if self.state == 'normal' else .5
+                font_size: '12sp'
+                halign: 'center'
+                text: "[color=#FFF300]#2 ENG\nHYD PUMP[/color]"
+            ClearButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                opacity: 1 if self.state == 'normal' else .5
+                font_size: '12sp'
+                halign: 'center'
+                text: "[color=#FFF300]#2 BLEED\nHOT[/color]"
+            ClearButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                font_size: '12sp'
+                halign: 'center'
+                text: ""
+            ClearButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                opacity: 1 if self.state == 'normal' else .5
+                font_size: '12sp'
+                halign: 'center'
+                text: "[color=#FFF300]PUSHER\nSYST FAIL[/color]"
+            ClearButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                opacity: 1 if self.state == 'normal' else .5
+                font_size: '12sp'
+                halign: 'center'
+                text: "[color=#FFF300]#2 STALL\nSYST FAIL[/color]"
+            ClearButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                opacity: 1 if self.state == 'normal' else .5
+                font_size: '12sp'
+                halign: 'center'
+                text: "[color=#FFF300]GPWS[/color]"
+        GridLayout:  #################################### ROW 7 ################################
+            rows: 1
+            id: row_1
+            pos_hint: {"top": .3, "left": 1}
+            size_hint: 1, .08
+            spacing: 5, 5
+            ClearRedButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                opacity: 1 if self.state == 'normal' else .5
+                font_size: '12sp'
+                halign: 'center'
+                text: "[color=#E10000]SEC INV[/color]"
+            ClearRedButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                opacity: 1 if self.state == 'normal' else .5
+                font_size: '12sp'
+                halign: 'center'
+                text: "[color=#E10000]R AC BUS[/color]"
+            ClearRedButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                opacity: 1 if self.state == 'normal' else .5
+                font_size: '12sp'
+                halign: 'center'
+                text: "[color=#E10000]PITOT\nHEAT 1[/color]"
+            ClearRedButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                font_size: '12sp'
+                halign: 'center'
+                text: ""
+            ClearRedButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                opacity: 1 if self.state == 'normal' else .5
+                font_size: '12sp'
+                halign: 'center'
+                text: "[color=#E10000]#2 HYD\nFLUID HOT[/color]"
+            ClearRedButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                opacity: 1 if self.state == 'normal' else .5
+                font_size: '12sp'
+                halign: 'center'
+                text: "[color=#E10000]#2 STBY HYD\nPUMP HOT[/color]"
+            ClearRedButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                opacity: 1 if self.state == 'normal' else .5
+                font_size: '12sp'
+                halign: 'center'
+                text: "[color=#E10000]#1 BLEED\nHOT[/color]"
+            ClearRedButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                opacity: 1 if self.state == 'normal' else .5
+                font_size: '12sp'
+                halign: 'center'
+                text: "[color=#E10000]#1 ENG\nHYD PUMP[/color]"
+            ClearRedButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                opacity: 1 if self.state == 'normal' else .5
+                font_size: '12sp'
+                halign: 'center'
+                text: "[color=#E10000]#2 ENG\nHYD PUMP[/color]"
+            ClearRedButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                opacity: 1 if self.state == 'normal' else .5
+                font_size: '12sp'
+                halign: 'center'
+                text: "[color=#E10000]#2 BLEED\nHOT[/color]"
+            ClearRedButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                font_size: '12sp'
+                halign: 'center'
+                text: ""
+            ClearRedButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                opacity: 1 if self.state == 'normal' else .5
+                font_size: '12sp'
+                halign: 'center'
+                text: "[color=#E10000]PUSHER\nSYST FAIL[/color]"
+            ClearRedButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                opacity: 1 if self.state == 'normal' else .5
+                font_size: '12sp'
+                halign: 'center'
+                text: "[color=#E10000]#2 STALL\nSYST FAIL[/color]"
+
+
+<ClearButton@Button>
+    background_color: (0,0,0,0)
+    background_normal: ''
+    back_color: utils.get_color_from_hex("#000000")
+    border_radius: 5
+    color: self.back_color
+    canvas.before:
+        Color:
+            rgb: utils.get_color_from_hex("#FFF300")
+        Line:
+            rounded_rectangle: (self.pos[0], self.pos[1], self.size[0], self.size[1], self.border_radius)
+            width: 1
+
+<ClearRedButton@Button>
+    background_color: (0,0,0,0)
+    background_normal: ''
+    back_color: utils.get_color_from_hex("#000000")
+    border_radius: 5
+    color: self.back_color
+    canvas.before:
+        Color:
+            rgb: utils.get_color_from_hex("#E10000")
+        Line:
+            rounded_rectangle: (self.pos[0], self.pos[1], self.size[0], self.size[1], self.border_radius)
+            width: 1

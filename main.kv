@@ -1,0 +1,20 @@
+#:include caution_panel_screen.kv
+#:include text_screen.kv
+GridLayout:
+    cols: 1
+    FloatLayout:
+        GridLayout:
+            canvas:
+                Color:
+                    rgb: utils.get_color_from_hex("#EEEEEE")
+                Rectangle:
+                    size: self.size
+                    pos: self.pos
+        ScreenManager:
+            id: screen_manager
+            CautionPanelScreen:
+                name: "caution_panel_screen"
+                id: caution_panel_screen
+            TextScreen:
+                name: "text_screen"
+                id: text_screen
