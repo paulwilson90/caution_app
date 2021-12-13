@@ -1,0 +1,4 @@
+TOUCHED RUNWAY
+- rear fuselage has contacted runway during take off or landing due to excessive nose up attitude
+- if indication occurs during take-off do not pressurise cabin. Return for landing as soon as practicable.
+- maintenance inspection and frangible switch replacement must be carried out before next flight.

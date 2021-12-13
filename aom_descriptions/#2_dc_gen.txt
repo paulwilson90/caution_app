@@ -1,0 +1,2 @@
+#2 DC GEN
+- applicable generator off line, or shutdown by the GCU due to generator malfunction

@@ -1,0 +1,3 @@
+CABIN DUCT HOT
+- indicated overheat (over 88°C) in cabin supply duct. Pack temperature valves are driven to maximum cooling position
+- light extinguishes when temperature drops below 82°C and normal operation resumes

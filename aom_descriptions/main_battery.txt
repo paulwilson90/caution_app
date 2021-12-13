@@ -1,0 +1,2 @@
+MAIN BATTERY
+- main battery switch selected off

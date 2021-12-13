@@ -1,0 +1,3 @@
+OUTBOARD ANTI SKID
+- outboard anti-skid system is unserviceable or system is selected off
+- lights illuminate briefly during test

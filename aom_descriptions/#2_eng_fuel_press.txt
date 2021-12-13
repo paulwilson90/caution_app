@@ -1,0 +1,3 @@
+#2 ENGINE FUEL PRESSURE
+- fuel boost pressure to engine inlet inadequate (less than 5.5psi)
+- ejector pump failed

@@ -1,0 +1,3 @@
+INBOARD ANTI SKID
+- inboard anti-skid system is unserviceable or system is selected off
+- lights illumniate breifly during test

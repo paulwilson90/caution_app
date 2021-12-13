@@ -1,0 +1,2 @@
+#1 TANK FUEL LOW
+- fuel tank quantity (collector bay) less than 130lbs

@@ -1,0 +1,4 @@
+FUELING ON
+- refuel or defuel selection made on refuel/defuel control panel
+- master caution light is not activated when this caution light is illuminated
+- fuel transfer not possible

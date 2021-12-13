@@ -1,0 +1,2 @@
+SIDE WINDOW HOT
+- pilots side window overheated. Electrical power to the affected panel is automatically de-energized.

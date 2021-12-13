@@ -1,0 +1,3 @@
+EMERGENCY LIGHTS DISARMED
+- Flight compartment EMER LIGHTS switch selected OFF while electrical power is applied to airplane.
+- light extinguishes when EMER LIGHTS switch is selected to ARM or ON

@@ -1,0 +1,3 @@
+LEFT ELEVATOR HORN HEAT
+- elevator horn heater element(s) failed, unpowered or test circuit activated
+- light goes out when test is completed or system is powered

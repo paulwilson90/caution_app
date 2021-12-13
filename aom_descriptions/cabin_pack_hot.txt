@@ -1,0 +1,3 @@
+CABIN PACK HOT
+- cabin pack compressor discharge temperature exceeds 207°C
+- PR & SOV energizes closed to cut off bleed air supply

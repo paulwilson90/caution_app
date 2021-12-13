@@ -1,0 +1,3 @@
+#2 SPU AUXILIARY POWER
+- indicates failure of one of two AC power supplies to #2 system standby hydraulic pump
+- pump continues to operate on opposite side AC power source

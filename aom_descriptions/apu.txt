@@ -1,0 +1,3 @@
+APU
+- indicates APU fault, fire or compartment overheat
+also illuminates during overspeed and fire tests

@@ -1,0 +1,3 @@
+#1 PITOT HEAT
+- associated pitot head heater failed or not selected ON
+- light goes out if associated pilot switch is selected ON

@@ -1,0 +1,3 @@
+SECONDARY INVERTER
+Secondary inverter inoperative
+- primary and auxiliary inverters maintain AC power

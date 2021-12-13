@@ -1,0 +1,2 @@
+#1 STALL SYST FAIL
+- SW/SP computer detects a fault in #1 computer of stall warning system

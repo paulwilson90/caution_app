@@ -1,0 +1,4 @@
+PUSHER SYSTEM FAILURE
+- either pilot's STICK PUSHER SHUT OFF switchlight pressed
+  dump valve opened to relieve stick pusher actuator of excessive pressure.
+- malfunction of STICK PUSHER system

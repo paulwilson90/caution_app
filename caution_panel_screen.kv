@@ -33,6 +33,9 @@
                 id: l_ac_bus
                 halign: 'center'
                 text: "[color=#FFF300]L AC BUS[/color]"
+                on_release:
+                    app.change_screen('text_screen')
+                    app.get_text('aom_descriptions/l_ac_bus.txt')
             ClearButton:
                 pos_hint: {"top": 1, "left": 1}
                 markup: True
@@ -41,6 +44,9 @@
                 id: emer_lts_disarmed
                 halign: 'center'
                 text: "[color=#FFF300]EMER LTS\nDISARMED[/color]"
+                on_release:
+                    app.change_screen('text_screen')
+                    app.get_text('aom_descriptions/emer_lts_disarmed.txt')
             ClearButton:
                 pos_hint: {"top": 1, "left": 1}
                 markup: True
@@ -53,6 +59,9 @@
                 id: one_hyd_fluid_hot
                 halign: 'center'
                 text: "[color=#FFF300]#1 HYD\nFLUID HOT[/color]"
+                on_release:
+                    app.change_screen('text_screen')
+                    app.get_text('aom_descriptions/#1_hyd_fluid_hot.txt')
             ClearButton:
                 pos_hint: {"top": 1, "left": 1}
                 markup: True
@@ -61,6 +70,9 @@
                 id: one_stby_hyd_pump_hot
                 halign: 'center'
                 text: "[color=#FFF300]#1 STBY HYD\nPUMP HOT[/color]"
+                on_release:
+                    app.change_screen('text_screen')
+                    app.get_text('aom_descriptions/#1_stb_hyd_pump_hot.txt')
             ClearButton:
                 pos_hint: {"top": 1, "left": 1}
                 markup: True
@@ -69,6 +81,9 @@
                 id: flt_comp_pack_hot
                 halign: 'center'
                 text: "[color=#FFF300]FLT COMPT-\nPACK HOT[/color]"
+                on_release:
+                    app.change_screen('text_screen')
+                    app.get_text('aom_descriptions/flt_compt_pack_hot.txt')
             ClearButton:
                 pos_hint: {"top": 1, "left": 1}
                 markup: True
@@ -77,6 +92,9 @@
                 id: one_eng_fuel_press
                 halign: 'center'
                 text: "[color=#FFF300]#1 ENG\nFUEL PRESS[/color]"
+                on_release:
+                    app.change_screen('text_screen')
+                    app.get_text('aom_descriptions/#1_eng_fuel_press.txt')
             ClearButton:
                 pos_hint: {"top": 1, "left": 1}
                 markup: True
@@ -85,6 +103,9 @@
                 id: two_eng_fuel_press
                 halign: 'center'
                 text: "[color=#FFF300]#2 ENG\nFUEL PRESS[/color]"
+                on_release:
+                    app.change_screen('text_screen')
+                    app.get_text('aom_descriptions/#2_eng_fuel_press.txt')
             ClearButton:
                 pos_hint: {"top": 1, "left": 1}
                 markup: True
@@ -93,6 +114,9 @@
                 id: alt_gear_ind_fail
                 halign: 'center'
                 text: "[color=#FFF300]ALT GEAR\nIND FAIL[/color]"
+                on_release:
+                    app.change_screen('text_screen')
+                    app.get_text('aom_descriptions/alt_gear_ind_fail.txt')
             ClearButton:
                 pos_hint: {"top": 1, "left": 1}
                 markup: True
@@ -101,6 +125,9 @@
                 id: rudd_press
                 halign: 'center'
                 text: "[color=#FFF300]RUD\nPRESS[/color]"
+                on_release:
+                    app.change_screen('text_screen')
+                    app.get_text('aom_descriptions/rud_press.txt')
             ClearButton:
                 pos_hint: {"top": 1, "left": 1}
                 markup: True
@@ -114,9 +141,8 @@
                 halign: 'center'
                 text: "[color=#FFF300]#1 STALL\nSYST FAIL[/color]"
                 on_release:
-                    app.change_screen(text_screen)
-                    app.get_text('one_stall_syst_fail')
-
+                    app.change_screen('text_screen')
+                    app.get_text('aom_descriptions/#1_stall_syst_fail.txt')
             ClearButton:
                 pos_hint: {"top": 1, "left": 1}
                 markup: True
@@ -128,6 +154,7 @@
                 on_release:
                     app.change_screen('text_screen')
                     app.get_text('aom_descriptions/flt_data_recorder.txt')
+
         GridLayout:  #################################### ROW 2 ################################
             rows: 1
             id: row_1
@@ -141,6 +168,9 @@
                 font_size: '12sp'
                 halign: 'center'
                 text: "[color=#FFF300]SEC INV[/color]"
+                on_release:
+                    app.change_screen('text_screen')
+                    app.get_text('aom_descriptions/sec_inv.txt')
             ClearButton:
                 pos_hint: {"top": 1, "left": 1}
                 markup: True
@@ -148,6 +178,9 @@
                 font_size: '12sp'
                 halign: 'center'
                 text: "[color=#FFF300]R AC BUS[/color]"
+                on_release:
+                    app.change_screen('text_screen')
+                    app.get_text('aom_descriptions/r_ac_bus.txt')
             ClearButton:
                 pos_hint: {"top": 1, "left": 1}
                 markup: True
@@ -155,6 +188,9 @@
                 font_size: '12sp'
                 halign: 'center'
                 text: "[color=#FFF300]PITOT\nHEAT 1[/color]"
+                on_release:
+                    app.change_screen('text_screen')
+                    app.get_text('aom_descriptions/pitot_heat_1.txt')
             ClearButton:
                 pos_hint: {"top": 1, "left": 1}
                 markup: True
@@ -168,6 +204,9 @@
                 font_size: '12sp'
                 halign: 'center'
                 text: "[color=#FFF300]#2 HYD\nFLUID HOT[/color]"
+                on_release:
+                    app.change_screen('text_screen')
+                    app.get_text('aom_descriptions/#2_hyd_fluid_hot.txt')
             ClearButton:
                 pos_hint: {"top": 1, "left": 1}
                 markup: True
@@ -175,6 +214,9 @@
                 font_size: '12sp'
                 halign: 'center'
                 text: "[color=#FFF300]#2 STBY HYD\nPUMP HOT[/color]"
+                on_release:
+                    app.change_screen('text_screen')
+                    app.get_text('aom_descriptions/#2_stby_hyd_pump_hot.txt')
             ClearButton:
                 pos_hint: {"top": 1, "left": 1}
                 markup: True
@@ -182,6 +224,9 @@
                 font_size: '12sp'
                 halign: 'center'
                 text: "[color=#FFF300]#1 BLEED\nHOT[/color]"
+                on_release:
+                    app.change_screen('text_screen')
+                    app.get_text('aom_descriptions/#1_bleed_hot.txt')
             ClearButton:
                 pos_hint: {"top": 1, "left": 1}
                 markup: True
@@ -189,6 +234,9 @@
                 font_size: '12sp'
                 halign: 'center'
                 text: "[color=#FFF300]#1 ENG\nHYD PUMP[/color]"
+                on_release:
+                    app.change_screen('text_screen')
+                    app.get_text('aom_descriptions/#1_eng_hyd_pump.txt')
             ClearButton:
                 pos_hint: {"top": 1, "left": 1}
                 markup: True
@@ -196,6 +244,9 @@
                 font_size: '12sp'
                 halign: 'center'
                 text: "[color=#FFF300]#2 ENG\nHYD PUMP[/color]"
+                on_release:
+                    app.change_screen('text_screen')
+                    app.get_text('aom_descriptions/#2_eng_hyd_pump.txt')
             ClearButton:
                 pos_hint: {"top": 1, "left": 1}
                 markup: True
@@ -203,6 +254,9 @@
                 font_size: '12sp'
                 halign: 'center'
                 text: "[color=#FFF300]#2 BLEED\nHOT[/color]"
+                on_release:
+                    app.change_screen('text_screen')
+                    app.get_text('aom_descriptions/#2_bleed_hot.txt')
             ClearButton:
                 pos_hint: {"top": 1, "left": 1}
                 markup: True
@@ -216,6 +270,9 @@
                 font_size: '12sp'
                 halign: 'center'
                 text: "[color=#FFF300]PUSHER\nSYST FAIL[/color]"
+                on_release:
+                    app.change_screen('text_screen')
+                    app.get_text('aom_descriptions/pusher_syst_fail.txt')
             ClearButton:
                 pos_hint: {"top": 1, "left": 1}
                 markup: True
@@ -223,6 +280,9 @@
                 font_size: '12sp'
                 halign: 'center'
                 text: "[color=#FFF300]#2 STALL\nSYST FAIL[/color]"
+                on_release:
+                    app.change_screen('text_screen')
+                    app.get_text('aom_descriptions/#2_stall_syst_fail.txt')
             ClearButton:
                 pos_hint: {"top": 1, "left": 1}
                 markup: True
@@ -230,6 +290,9 @@
                 font_size: '12sp'
                 halign: 'center'
                 text: "[color=#FFF300]GPWS[/color]"
+                on_release:
+                    app.change_screen('text_screen')
+                    app.get_text('aom_descriptions/gpws.txt')
         GridLayout:  #################################### ROW 3 ################################
             rows: 1
             id: row_1
@@ -242,21 +305,27 @@
                 opacity: 1 if self.state == 'normal' else .5
                 font_size: '12sp'
                 halign: 'center'
-                text: "[color=#FFF300]SEC INV[/color]"
+                text: "[color=#FFF300]AUX INV[/color]"
+                on_release:
+                    app.change_screen('text_screen')
+                    app.get_text('aom_descriptions/aux_inv.txt')
             ClearButton:
                 pos_hint: {"top": 1, "left": 1}
                 markup: True
                 opacity: 1 if self.state == 'normal' else .5
                 font_size: '12sp'
                 halign: 'center'
-                text: "[color=#FFF300]R AC BUS[/color]"
+                text: "[color=#FFF300]DC BUS[/color]"
+                on_release:
+                    app.change_screen('text_screen')
+                    app.get_text('aom_descriptions/dc_bus.txt')
             ClearButton:
                 pos_hint: {"top": 1, "left": 1}
                 markup: True
                 opacity: 1 if self.state == 'normal' else .5
                 font_size: '12sp'
                 halign: 'center'
-                text: "[color=#FFF300]PITOT\nHEAT 1[/color]"
+                text: ""
             ClearButton:
                 pos_hint: {"top": 1, "left": 1}
                 markup: True
@@ -269,69 +338,96 @@
                 opacity: 1 if self.state == 'normal' else .5
                 font_size: '12sp'
                 halign: 'center'
-                text: "[color=#FFF300]#2 HYD\nFLUID HOT[/color]"
+                text: "[color=#FFF300]FLT COMPT\nDUCT HOT[/color]"
+                on_release:
+                    app.change_screen('text_screen')
+                    app.get_text('aom_descriptions/flt_compt_duct_hot.txt')
             ClearButton:
                 pos_hint: {"top": 1, "left": 1}
                 markup: True
                 opacity: 1 if self.state == 'normal' else .5
                 font_size: '12sp'
                 halign: 'center'
-                text: "[color=#FFF300]#2 STBY HYD\nPUMP HOT[/color]"
+                text: "[color=#FFF300]PITOT\nHEAT 2[/color]"
+                on_release:
+                    app.change_screen('text_screen')
+                    app.get_text('aom_descriptions/pitot_heat_2.txt')
             ClearButton:
                 pos_hint: {"top": 1, "left": 1}
                 markup: True
                 opacity: 1 if self.state == 'normal' else .5
                 font_size: '12sp'
                 halign: 'center'
-                text: "[color=#FFF300]#1 BLEED\nHOT[/color]"
+                text: "[color=#FFF300]#1 DC GEN\nHOT[/color]"
+                on_release:
+                    app.change_screen('text_screen')
+                    app.get_text('aom_descriptions/#1_dc_gen_hot.txt')
             ClearButton:
                 pos_hint: {"top": 1, "left": 1}
                 markup: True
                 opacity: 1 if self.state == 'normal' else .5
                 font_size: '12sp'
                 halign: 'center'
-                text: "[color=#FFF300]#1 ENG\nHYD PUMP[/color]"
+                text: "[color=#FFF300]#1 DC GEN[/color]"
             ClearButton:
                 pos_hint: {"top": 1, "left": 1}
                 markup: True
                 opacity: 1 if self.state == 'normal' else .5
                 font_size: '12sp'
                 halign: 'center'
-                text: "[color=#FFF300]#2 ENG\nHYD PUMP[/color]"
+                text: "[color=#FFF300]#2 DC GEN[/color]"
+                on_release:
+                    app.change_screen('text_screen')
+                    app.get_text('aom_descriptions/#2_dc_gen.txt')
             ClearButton:
                 pos_hint: {"top": 1, "left": 1}
                 markup: True
                 opacity: 1 if self.state == 'normal' else .5
                 font_size: '12sp'
                 halign: 'center'
-                text: "[color=#FFF300]#2 BLEED\nHOT[/color]"
+                text: "[color=#FFF300]#2 DC GEN\nHOT[/color]"
+                on_release:
+                    app.change_screen('text_screen')
+                    app.get_text('aom_descriptions/#2_dc_gen_hot.txt')
             ClearButton:
                 pos_hint: {"top": 1, "left": 1}
                 markup: True
                 font_size: '12sp'
                 halign: 'center'
-                text: ""
-            ClearButton:
-                pos_hint: {"top": 1, "left": 1}
-                markup: True
-                opacity: 1 if self.state == 'normal' else .5
-                font_size: '12sp'
-                halign: 'center'
-                text: "[color=#FFF300]PUSHER\nSYST FAIL[/color]"
-            ClearButton:
-                pos_hint: {"top": 1, "left": 1}
-                markup: True
-                opacity: 1 if self.state == 'normal' else .5
-                font_size: '12sp'
-                halign: 'center'
-                text: "[color=#FFF300]#2 STALL\nSYST FAIL[/color]"
+                text: "[color=#FFF300]ROLL SPLR\nINBD HYD[/color]"
+                on_release:
+                    app.change_screen('text_screen')
+                    app.get_text('aom_descriptions/roll_splr_inbd_hyd.txt')
             ClearButton:
                 pos_hint: {"top": 1, "left": 1}
                 markup: True
                 opacity: 1 if self.state == 'normal' else .5
                 font_size: '12sp'
                 halign: 'center'
-                text: "[color=#FFF300]GPWS[/color]"
+                text: "[color=#FFF300]ROLL SPLR\nOUTBD HYD[/color]"
+                on_release:
+                    app.change_screen('text_screen')
+                    app.get_text('aom_descriptions/roll_splr_outbd_hyd.txt')
+            ClearButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                opacity: 1 if self.state == 'normal' else .5
+                font_size: '12sp'
+                halign: 'center'
+                text: "[color=#FFF300]NOSE\nSTEERING[/color]"
+                on_release:
+                    app.change_screen('text_screen')
+                    app.get_text('aom_descriptions/nose_steering.txt')
+            ClearButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                opacity: 1 if self.state == 'normal' else .5
+                font_size: '12sp'
+                halign: 'center'
+                text: "[color=#FFF300]PARKING\nBRAKE[/color]"
+                on_release:
+                    app.change_screen('text_screen')
+                    app.get_text('aom_descriptions/parking_brake.txt')
         GridLayout:  #################################### ROW 4 ################################
             rows: 1
             id: row_1
@@ -344,21 +440,30 @@
                 opacity: 1 if self.state == 'normal' else .5
                 font_size: '12sp'
                 halign: 'center'
-                text: "[color=#FFF300]SEC INV[/color]"
+                text: "[color=#FFF300]L 26 AC[/color]"
+                on_release:
+                    app.change_screen('text_screen')
+                    app.get_text('aom_descriptions/l_26_ac.txt')
             ClearButton:
                 pos_hint: {"top": 1, "left": 1}
                 markup: True
                 opacity: 1 if self.state == 'normal' else .5
                 font_size: '12sp'
                 halign: 'center'
-                text: "[color=#FFF300]R AC BUS[/color]"
+                text: "[color=#FFF300]L TRU[/color]"
+                on_release:
+                    app.change_screen('text_screen')
+                    app.get_text('aom_descriptions/l_tru.txt')
             ClearButton:
                 pos_hint: {"top": 1, "left": 1}
                 markup: True
                 opacity: 1 if self.state == 'normal' else .5
                 font_size: '12sp'
                 halign: 'center'
-                text: "[color=#FFF300]PITOT\nHEAT 1[/color]"
+                text: "[color=#FFF300]L WSHLD\nHOT[/color]"
+                on_release:
+                    app.change_screen('text_screen')
+                    app.get_text('aom_descriptions/l_wshld_hot.txt')
             ClearButton:
                 pos_hint: {"top": 1, "left": 1}
                 markup: True
@@ -371,69 +476,101 @@
                 opacity: 1 if self.state == 'normal' else .5
                 font_size: '12sp'
                 halign: 'center'
-                text: "[color=#FFF300]#2 HYD\nFLUID HOT[/color]"
+                text: "[color=#FFF300]CABIN\nDUCT HOT[/color]"
+                on_release:
+                    app.change_screen('text_screen')
+                    app.get_text('aom_descriptions/cabin_duct_hot.txt')
             ClearButton:
                 pos_hint: {"top": 1, "left": 1}
                 markup: True
                 opacity: 1 if self.state == 'normal' else .5
                 font_size: '12sp'
                 halign: 'center'
-                text: "[color=#FFF300]#2 STBY HYD\nPUMP HOT[/color]"
+                text: "[color=#FFF300]MAIN\nBATTERY[/color]"
+                on_release:
+                    app.change_screen('text_screen')
+                    app.get_text('aom_descriptions/main_battery.txt')
             ClearButton:
                 pos_hint: {"top": 1, "left": 1}
                 markup: True
                 opacity: 1 if self.state == 'normal' else .5
                 font_size: '12sp'
                 halign: 'center'
-                text: "[color=#FFF300]#1 BLEED\nHOT[/color]"
+                text: "[color=#FFF300]#1 AC GEN\nHOT[/color]"
+                on_release:
+                    app.change_screen('text_screen')
+                    app.get_text('aom_descriptions/#1_ac_gen_hot.txt')
             ClearButton:
                 pos_hint: {"top": 1, "left": 1}
                 markup: True
                 opacity: 1 if self.state == 'normal' else .5
                 font_size: '12sp'
                 halign: 'center'
-                text: "[color=#FFF300]#1 ENG\nHYD PUMP[/color]"
+                text: "[color=#FFF300]#1 AC GEN[/color]"
+                on_release:
+                    app.change_screen('text_screen')
+                    app.get_text('aom_descriptions/#1_ac_gen.txt')
             ClearButton:
                 pos_hint: {"top": 1, "left": 1}
                 markup: True
                 opacity: 1 if self.state == 'normal' else .5
                 font_size: '12sp'
                 halign: 'center'
-                text: "[color=#FFF300]#2 ENG\nHYD PUMP[/color]"
+                text: "[color=#FFF300]#2 AC GEN[/color]"
+                on_release:
+                    app.change_screen('text_screen')
+                    app.get_text('aom_descriptions/#2_ac_gen.txt')
             ClearButton:
                 pos_hint: {"top": 1, "left": 1}
                 markup: True
                 opacity: 1 if self.state == 'normal' else .5
                 font_size: '12sp'
                 halign: 'center'
-                text: "[color=#FFF300]#2 BLEED\nHOT[/color]"
-            ClearButton:
-                pos_hint: {"top": 1, "left": 1}
-                markup: True
-                font_size: '12sp'
-                halign: 'center'
-                text: ""
-            ClearButton:
-                pos_hint: {"top": 1, "left": 1}
-                markup: True
-                opacity: 1 if self.state == 'normal' else .5
-                font_size: '12sp'
-                halign: 'center'
-                text: "[color=#FFF300]PUSHER\nSYST FAIL[/color]"
+                text: "[color=#FFF300]#2 AC GEN\nHOT[/color]"
+                on_release:
+                    app.change_screen('text_screen')
+                    app.get_text('aom_descriptions/#2_ac_gen_hot.txt')
             ClearButton:
                 pos_hint: {"top": 1, "left": 1}
                 markup: True
                 opacity: 1 if self.state == 'normal' else .5
                 font_size: '12sp'
                 halign: 'center'
-                text: "[color=#FFF300]#2 STALL\nSYST FAIL[/color]"
+                text: "[color=#FFF300]#1 RUD\nHYD[/color]"
+                on_release:
+                    app.change_screen('text_screen')
+                    app.get_text('aom_descriptions/#1_rud_hyd.txt')
             ClearButton:
                 pos_hint: {"top": 1, "left": 1}
                 markup: True
                 opacity: 1 if self.state == 'normal' else .5
                 font_size: '12sp'
                 halign: 'center'
-                text: "[color=#FFF300]GPWS[/color]"
+                text: "[color=#FFF300]#2 RUD\nHYD[/color]"
+                on_release:
+                    app.change_screen('text_screen')
+                    app.get_text('aom_descriptions/#2_rud_hyd.txt')
+            ClearButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                opacity: 1 if self.state == 'normal' else .5
+                font_size: '12sp'
+                halign: 'center'
+                text: "[color=#FFF300]INBD\nANTI SKID[/color]"
+                on_release:
+                    app.change_screen('text_screen')
+                    app.get_text('aom_descriptions/inbd_anti_skid.txt')
+            ClearButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                opacity: 1 if self.state == 'normal' else .5
+                font_size: '12sp'
+                halign: 'center'
+                text: "[color=#FFF300]OUTBD\nANTI SKID[/color]"
+                on_release:
+                    app.change_screen('text_screen')
+                    app.get_text('aom_descriptions/outbd_anti_skid.txt')
+
         GridLayout:  #################################### ROW 5 ################################
             rows: 1
             id: row_1
@@ -446,21 +583,30 @@
                 opacity: 1 if self.state == 'normal' else .5
                 font_size: '12sp'
                 halign: 'center'
-                text: "[color=#FFF300]SEC INV[/color]"
+                text: "[color=#FFF300]R 26 AC[/color]"
+                on_release:
+                    app.change_screen('text_screen')
+                    app.get_text('aom_descriptions/r_26_ac.txt')
             ClearButton:
                 pos_hint: {"top": 1, "left": 1}
                 markup: True
                 opacity: 1 if self.state == 'normal' else .5
                 font_size: '12sp'
                 halign: 'center'
-                text: "[color=#FFF300]R AC BUS[/color]"
+                text: "[color=#FFF300]R TRU[/color]"
+                on_release:
+                    app.change_screen('text_screen')
+                    app.get_text('aom_descriptions/r_tru.txt')
             ClearButton:
                 pos_hint: {"top": 1, "left": 1}
                 markup: True
                 opacity: 1 if self.state == 'normal' else .5
                 font_size: '12sp'
                 halign: 'center'
-                text: "[color=#FFF300]PITOT\nHEAT 1[/color]"
+                text: "[color=#FFF300]R WSHLD\nHOT[/color]"
+                on_release:
+                    app.change_screen('text_screen')
+                    app.get_text('aom_descriptions/r_wshld_hot.txt')
             ClearButton:
                 pos_hint: {"top": 1, "left": 1}
                 markup: True
@@ -473,42 +619,30 @@
                 opacity: 1 if self.state == 'normal' else .5
                 font_size: '12sp'
                 halign: 'center'
-                text: "[color=#FFF300]#2 HYD\nFLUID HOT[/color]"
+                text: "[color=#FFF300]AIR COND\nPACK HOT[/color]"
+                on_release:
+                    app.change_screen('text_screen')
+                    app.get_text('aom_descriptions/air_cond_pack_hot.txt')
             ClearButton:
                 pos_hint: {"top": 1, "left": 1}
                 markup: True
                 opacity: 1 if self.state == 'normal' else .5
                 font_size: '12sp'
                 halign: 'center'
-                text: "[color=#FFF300]#2 STBY HYD\nPUMP HOT[/color]"
+                text: "[color=#FFF300]AUX\nBATTERY[/color]"
+                on_release:
+                    app.change_screen('text_screen')
+                    app.get_text('aom_descriptions/aux_battery.txt')
             ClearButton:
                 pos_hint: {"top": 1, "left": 1}
                 markup: True
                 opacity: 1 if self.state == 'normal' else .5
                 font_size: '12sp'
                 halign: 'center'
-                text: "[color=#FFF300]#1 BLEED\nHOT[/color]"
-            ClearButton:
-                pos_hint: {"top": 1, "left": 1}
-                markup: True
-                opacity: 1 if self.state == 'normal' else .5
-                font_size: '12sp'
-                halign: 'center'
-                text: "[color=#FFF300]#1 ENG\nHYD PUMP[/color]"
-            ClearButton:
-                pos_hint: {"top": 1, "left": 1}
-                markup: True
-                opacity: 1 if self.state == 'normal' else .5
-                font_size: '12sp'
-                halign: 'center'
-                text: "[color=#FFF300]#2 ENG\nHYD PUMP[/color]"
-            ClearButton:
-                pos_hint: {"top": 1, "left": 1}
-                markup: True
-                opacity: 1 if self.state == 'normal' else .5
-                font_size: '12sp'
-                halign: 'center'
-                text: "[color=#FFF300]#2 BLEED\nHOT[/color]"
+                text: "[color=#FFF300]#1 ENG\nMANUAL[/color]"
+                on_release:
+                    app.change_screen('text_screen')
+                    app.get_text('aom_descriptions/#1_eng_manual.txt')
             ClearButton:
                 pos_hint: {"top": 1, "left": 1}
                 markup: True
@@ -521,21 +655,59 @@
                 opacity: 1 if self.state == 'normal' else .5
                 font_size: '12sp'
                 halign: 'center'
-                text: "[color=#FFF300]PUSHER\nSYST FAIL[/color]"
+                text: "[color=#FFF300]#2 SPU\nAUX PWR[/color]"
+                on_release:
+                    app.change_screen('text_screen')
+                    app.get_text('aom_descriptions/#2_spu_aux_pwr.txt')
             ClearButton:
                 pos_hint: {"top": 1, "left": 1}
                 markup: True
                 opacity: 1 if self.state == 'normal' else .5
                 font_size: '12sp'
                 halign: 'center'
-                text: "[color=#FFF300]#2 STALL\nSYST FAIL[/color]"
+                text: "[color=#FFF300]#2 ENG\nMANUAL[/color]"
+                on_release:
+                    app.change_screen('text_screen')
+                    app.get_text('aom_descriptions/#2_eng_manual.txt')
+            ClearButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                font_size: '12sp'
+                halign: 'center'
+                text: "[color=#FFF300]RUD FULL\nPRESS[/color]"
+                on_release:
+                    app.change_screen('text_screen')
+                    app.get_text('aom_descriptions/rud_full_press.txt')
             ClearButton:
                 pos_hint: {"top": 1, "left": 1}
                 markup: True
                 opacity: 1 if self.state == 'normal' else .5
                 font_size: '12sp'
                 halign: 'center'
-                text: "[color=#FFF300]GPWS[/color]"
+                text: "[color=#FFF300]FLAP\nDRIVE[/color]"
+                on_release:
+                    app.change_screen('text_screen')
+                    app.get_text('aom_descriptions/flap_drive.txt')
+            ClearButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                opacity: 1 if self.state == 'normal' else .5
+                font_size: '12sp'
+                halign: 'center'
+                text: "[color=#FFF300]LDG GEAR\nINOP[/color]"
+                on_release:
+                    app.change_screen('text_screen')
+                    app.get_text('aom_descriptions/ldg_gear_inop.txt')
+            ClearButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                opacity: 1 if self.state == 'normal' else .5
+                font_size: '12sp'
+                halign: 'center'
+                text: "[color=#FFF300]WT ON\nWHEELS[/color]"
+                on_release:
+                    app.change_screen('text_screen')
+                    app.get_text('aom_descriptions/wt_on_wheels.txt')
         GridLayout:  #################################### ROW 6 ################################
             rows: 1
             id: row_1
@@ -548,21 +720,100 @@
                 opacity: 1 if self.state == 'normal' else .5
                 font_size: '12sp'
                 halign: 'center'
-                text: "[color=#FFF300]SEC INV[/color]"
+                text: "[color=#FFF300]L ELEV\nHORN HEAT[/color]"
+                on_release:
+                    app.change_screen('text_screen')
+                    app.get_text('aom_descriptions/l_elev_horn_heat.txt')
             ClearButton:
                 pos_hint: {"top": 1, "left": 1}
                 markup: True
                 opacity: 1 if self.state == 'normal' else .5
                 font_size: '12sp'
                 halign: 'center'
-                text: "[color=#FFF300]R AC BUS[/color]"
+                text: "[color=#FFF300]R ELEV\nHORN HEAT[/color]"
+                on_release:
+                    app.change_screen('text_screen')
+                    app.get_text('aom_descriptions/r_elev_horn_heat.txt')
             ClearButton:
                 pos_hint: {"top": 1, "left": 1}
                 markup: True
                 opacity: 1 if self.state == 'normal' else .5
                 font_size: '12sp'
                 halign: 'center'
-                text: "[color=#FFF300]PITOT\nHEAT 1[/color]"
+                text: "[color=#FFF300]SIDE WDO\nHOT[/color]"
+                on_release:
+                    app.change_screen('text_screen')
+                    app.get_text('aom_descriptions/side_wdo_hot.txt')
+            ClearButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                opacity: 1 if self.state == 'normal' else .5
+                font_size: '12sp'
+                halign: 'center'
+                text: "[color=#FFF300]L TRU\nHOT[/color]"
+                on_release:
+                    app.change_screen('text_screen')
+                    app.get_text('aom_descriptions/l_tru_hot.txt')
+            ClearButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                opacity: 1 if self.state == 'normal' else .5
+                font_size: '12sp'
+                halign: 'center'
+                text: "[color=#FFF300]R TRU\nHOT[/color]"
+                on_release:
+                    app.change_screen('text_screen')
+                    app.get_text('aom_descriptions/r_tru_hot.txt')
+            ClearButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                opacity: 1 if self.state == 'normal' else .5
+                font_size: '12sp'
+                halign: 'center'
+                text: "[color=#FFF300]DEICE\nPRESS[/color]"
+                on_release:
+                    app.change_screen('text_screen')
+                    app.get_text('aom_descriptions/deice_press.txt')
+            ClearButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                opacity: 1 if self.state == 'normal' else .5
+                font_size: '12sp'
+                halign: 'center'
+                text: "[color=#FFF300]#1 FUEL\nFLTR BYPASS[/color]"
+                on_release:
+                    app.change_screen('text_screen')
+                    app.get_text('aom_descriptions/#1_fuel_fltr_bypass.txt')
+            ClearButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                opacity: 1 if self.state == 'normal' else .5
+                font_size: '12sp'
+                halign: 'center'
+                text: "[color=#FFF300]#1 TANK\nFUEL LOW[/color]"
+                on_release:
+                    app.change_screen('text_screen')
+                    app.get_text('aom_descriptions/#1_tank_fuel_low.txt')
+            ClearButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                opacity: 1 if self.state == 'normal' else .5
+                font_size: '12sp'
+                halign: 'center'
+                text: "[color=#FFF300]#2 TANK\nFUEL LOW[/color]"
+                on_release:
+                    app.change_screen('text_screen')
+                    app.get_text('aom_descriptions/#2_tank_fuel_low.txt')
+            ClearButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                opacity: 1 if self.state == 'normal' else .5
+                font_size: '12sp'
+                halign: 'center'
+                text: "[color=#FFF300]#2 FUEL\nFLTR BYPASS[/color]"
+                on_release:
+                    app.change_screen('text_screen')
+                    app.get_text('aom_descriptions/#2_fuel_fltr_bypass.txt')
             ClearButton:
                 pos_hint: {"top": 1, "left": 1}
                 markup: True
@@ -575,69 +826,30 @@
                 opacity: 1 if self.state == 'normal' else .5
                 font_size: '12sp'
                 halign: 'center'
-                text: "[color=#FFF300]#2 HYD\nFLUID HOT[/color]"
+                text: "[color=#FFF300]FLAP\nPOWER[/color]"
+                on_release:
+                    app.change_screen('text_screen')
+                    app.get_text('aom_descriptions/flap_power.txt')
             ClearButton:
                 pos_hint: {"top": 1, "left": 1}
                 markup: True
                 opacity: 1 if self.state == 'normal' else .5
                 font_size: '12sp'
                 halign: 'center'
-                text: "[color=#FFF300]#2 STBY HYD\nPUMP HOT[/color]"
+                text: "[color=#FFF300]APU[/color]"
+                on_release:
+                    app.change_screen('text_screen')
+                    app.get_text('aom_descriptions/apu.txt')
             ClearButton:
                 pos_hint: {"top": 1, "left": 1}
                 markup: True
                 opacity: 1 if self.state == 'normal' else .5
                 font_size: '12sp'
                 halign: 'center'
-                text: "[color=#FFF300]#1 BLEED\nHOT[/color]"
-            ClearButton:
-                pos_hint: {"top": 1, "left": 1}
-                markup: True
-                opacity: 1 if self.state == 'normal' else .5
-                font_size: '12sp'
-                halign: 'center'
-                text: "[color=#FFF300]#1 ENG\nHYD PUMP[/color]"
-            ClearButton:
-                pos_hint: {"top": 1, "left": 1}
-                markup: True
-                opacity: 1 if self.state == 'normal' else .5
-                font_size: '12sp'
-                halign: 'center'
-                text: "[color=#FFF300]#2 ENG\nHYD PUMP[/color]"
-            ClearButton:
-                pos_hint: {"top": 1, "left": 1}
-                markup: True
-                opacity: 1 if self.state == 'normal' else .5
-                font_size: '12sp'
-                halign: 'center'
-                text: "[color=#FFF300]#2 BLEED\nHOT[/color]"
-            ClearButton:
-                pos_hint: {"top": 1, "left": 1}
-                markup: True
-                font_size: '12sp'
-                halign: 'center'
-                text: ""
-            ClearButton:
-                pos_hint: {"top": 1, "left": 1}
-                markup: True
-                opacity: 1 if self.state == 'normal' else .5
-                font_size: '12sp'
-                halign: 'center'
-                text: "[color=#FFF300]PUSHER\nSYST FAIL[/color]"
-            ClearButton:
-                pos_hint: {"top": 1, "left": 1}
-                markup: True
-                opacity: 1 if self.state == 'normal' else .5
-                font_size: '12sp'
-                halign: 'center'
-                text: "[color=#FFF300]#2 STALL\nSYST FAIL[/color]"
-            ClearButton:
-                pos_hint: {"top": 1, "left": 1}
-                markup: True
-                opacity: 1 if self.state == 'normal' else .5
-                font_size: '12sp'
-                halign: 'center'
-                text: "[color=#FFF300]GPWS[/color]"
+                text: "[color=#FFF300]FUELING\nON[/color]"
+                on_release:
+                    app.change_screen('text_screen')
+                    app.get_text('aom_descriptions/fueling_on.txt')
         GridLayout:  #################################### ROW 7 ################################
             rows: 1
             id: row_1
@@ -650,26 +862,6 @@
                 opacity: 1 if self.state == 'normal' else .5
                 font_size: '12sp'
                 halign: 'center'
-                text: "[color=#E10000]SEC INV[/color]"
-            ClearRedButton:
-                pos_hint: {"top": 1, "left": 1}
-                markup: True
-                opacity: 1 if self.state == 'normal' else .5
-                font_size: '12sp'
-                halign: 'center'
-                text: "[color=#E10000]R AC BUS[/color]"
-            ClearRedButton:
-                pos_hint: {"top": 1, "left": 1}
-                markup: True
-                opacity: 1 if self.state == 'normal' else .5
-                font_size: '12sp'
-                halign: 'center'
-                text: "[color=#E10000]PITOT\nHEAT 1[/color]"
-            ClearRedButton:
-                pos_hint: {"top": 1, "left": 1}
-                markup: True
-                font_size: '12sp'
-                halign: 'center'
                 text: ""
             ClearRedButton:
                 pos_hint: {"top": 1, "left": 1}
@@ -677,62 +869,120 @@
                 opacity: 1 if self.state == 'normal' else .5
                 font_size: '12sp'
                 halign: 'center'
-                text: "[color=#E10000]#2 HYD\nFLUID HOT[/color]"
+                text: "[color=#E10000]TOUCHED\nRUNWAY[/color]"
+                on_release:
+                    app.change_screen('text_screen')
+                    app.get_text('aom_descriptions/touched_runway.txt')
             ClearRedButton:
                 pos_hint: {"top": 1, "left": 1}
                 markup: True
                 opacity: 1 if self.state == 'normal' else .5
                 font_size: '12sp'
                 halign: 'center'
-                text: "[color=#E10000]#2 STBY HYD\nPUMP HOT[/color]"
+                text: "[color=#E10000]#1 ENG\nOIL PRESS[/color]"
+                on_release:
+                    app.change_screen('text_screen')
+                    app.get_text('aom_descriptions/#1_eng_oil_press.txt')
             ClearRedButton:
                 pos_hint: {"top": 1, "left": 1}
                 markup: True
                 opacity: 1 if self.state == 'normal' else .5
                 font_size: '12sp'
                 halign: 'center'
-                text: "[color=#E10000]#1 BLEED\nHOT[/color]"
+                text: "[color=#E10000]#2 ENG\nOIL PRESS[/color]"
+                on_release:
+                    app.change_screen('text_screen')
+                    app.get_text('aom_descriptions/#2_eng_oil_press.txt')
             ClearRedButton:
                 pos_hint: {"top": 1, "left": 1}
                 markup: True
                 opacity: 1 if self.state == 'normal' else .5
                 font_size: '12sp'
                 halign: 'center'
-                text: "[color=#E10000]#1 ENG\nHYD PUMP[/color]"
+                text: "[color=#E10000]SMOKE[/color]"
+                on_release:
+                    app.change_screen('text_screen')
+                    app.get_text('aom_descriptions/smoke.txt')
             ClearRedButton:
                 pos_hint: {"top": 1, "left": 1}
                 markup: True
                 opacity: 1 if self.state == 'normal' else .5
                 font_size: '12sp'
                 halign: 'center'
-                text: "[color=#E10000]#2 ENG\nHYD PUMP[/color]"
+                text: "[color=#E10000]CHECK\nFIRE DET[/color]"
+                on_release:
+                    app.change_screen('text_screen')
+                    app.get_text('aom_descriptions/check_fire_det.txt')
             ClearRedButton:
                 pos_hint: {"top": 1, "left": 1}
                 markup: True
                 opacity: 1 if self.state == 'normal' else .5
                 font_size: '12sp'
                 halign: 'center'
-                text: "[color=#E10000]#2 BLEED\nHOT[/color]"
-            ClearRedButton:
-                pos_hint: {"top": 1, "left": 1}
-                markup: True
-                font_size: '12sp'
-                halign: 'center'
-                text: ""
-            ClearRedButton:
-                pos_hint: {"top": 1, "left": 1}
-                markup: True
-                opacity: 1 if self.state == 'normal' else .5
-                font_size: '12sp'
-                halign: 'center'
-                text: "[color=#E10000]PUSHER\nSYST FAIL[/color]"
+                text: "[color=#E10000]CABIN\nPRESS[/color]"
+                on_release:
+                    app.change_screen('text_screen')
+                    app.get_text('aom_descriptions/cabin_press.txt')
             ClearRedButton:
                 pos_hint: {"top": 1, "left": 1}
                 markup: True
                 opacity: 1 if self.state == 'normal' else .5
                 font_size: '12sp'
                 halign: 'center'
-                text: "[color=#E10000]#2 STALL\nSYST FAIL[/color]"
+                text: "[color=#E10000]PASS\nDOOR[/color]"
+                on_release:
+                    app.change_screen('text_screen')
+                    app.get_text('aom_descriptions/pass_door.txt')
+            ClearRedButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                opacity: 1 if self.state == 'normal' else .5
+                font_size: '12sp'
+                halign: 'center'
+                text: "[color=#E10000]BAG\nDOOR[/color]"
+                on_release:
+                    app.change_screen('text_screen')
+                    app.get_text('aom_descriptions/bag_door.txt')
+            ClearRedButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                opacity: 1 if self.state == 'normal' else .5
+                font_size: '12sp'
+                halign: 'center'
+                text: "[color=#E10000]MAIN BAT\nHOT[/color]"
+                on_release:
+                    app.change_screen('text_screen')
+                    app.get_text('aom_descriptions/main_bat_hot.txt')
+            ClearRedButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                opacity: 1 if self.state == 'normal' else .5
+                font_size: '12sp'
+                halign: 'center'
+                text: "[color=#E10000]AUX BAT\nHOT[/color]"
+                on_release:
+                    app.change_screen('text_screen')
+                    app.get_text('aom_descriptions/aux_bat_hot.txt')
+            ClearRedButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                opacity: 1 if self.state == 'normal' else .5
+                font_size: '12sp'
+                halign: 'center'
+                text: "[color=#E10000]FWD EXIT\nDOOR[/color]"
+                on_release:
+                    app.change_screen('text_screen')
+                    app.get_text('aom_descriptions/fwd_exit_door.txt')
+            ClearRedButton:
+                pos_hint: {"top": 1, "left": 1}
+                markup: True
+                opacity: 1 if self.state == 'normal' else .5
+                font_size: '12sp'
+                halign: 'center'
+                text: "[color=#E10000]SERV\nDOOR[/color]"
+                on_release:
+                    app.change_screen('text_screen')
+                    app.get_text('aom_descriptions/serv_door.txt')
 
 
 <ClearButton@Button>

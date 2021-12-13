@@ -1,0 +1,3 @@
+WEIGHT ON WHEELS
+- indicated failure in a weight-on-wheels (WOW) sensor
+- PSEU will continue to provide WOW signals due to circuit and sensor redundancy

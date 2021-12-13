@@ -1,0 +1,3 @@
+CABIN PRESSURE
+- cabin pressure exceeds 10,000ft
+- light extinguishes when cabin altitude descends below 10,000ft

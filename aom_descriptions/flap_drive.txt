@@ -1,0 +1,3 @@
+FLAP DRIVE
+- failure in primary flap drive
+- flaps continue to operate using secondary drive

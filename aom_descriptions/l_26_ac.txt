@@ -1,0 +1,5 @@
+LEFT 26V AC TRANSFORMER
+- associated 26 volt AC transformer failed.
+All 26 volt AC services on related bus will be lost
+
+- loss of electrical power at corresponding 115 volt AC fixed frequency bus

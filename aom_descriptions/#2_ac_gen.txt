@@ -1,0 +1,2 @@
+#2 AC GEN
+- applicable AC variable frequency generator off line, or shut down by the GCU due to generator malfunction

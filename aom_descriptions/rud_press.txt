@@ -1,0 +1,4 @@
+RUDDER PRESSURE
+- failure of rudder pressure regulator to reduce to 900psi when airspeed exceeds 150kts
+- regulator fails to increase rudder pressure to 1500psi when airspeed below 150kts
+- system pressure is 3000psi and airspeed exceeds 150kts

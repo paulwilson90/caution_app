@@ -1,2 +1,2 @@
-LEFT AC BUS
+RIGHT AC BUS
 - bus fault or generator malfunction. GCU isolates faulty bus

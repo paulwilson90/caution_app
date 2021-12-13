@@ -1,0 +1,3 @@
+#2 STANDBY HYDRAULIC PUMP HOT
+- indicates overhead of related system electrically-operated standby hydraulic pump
+- lights extinguish when overheat condition is alleviated

@@ -1,0 +1,3 @@
+#2 AC HOT
+- #2 ac generator windings overheating.
+- caution light will go out when generator cools.

@@ -1,0 +1,2 @@
+SMOKE
+- smoke detected in baggage area

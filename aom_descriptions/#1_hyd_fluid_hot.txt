@@ -1,0 +1,2 @@
+#1 HYDRAULIC FLUID HOT
+- indicates hydraulic fluid in related reservoir exceeds 109°C

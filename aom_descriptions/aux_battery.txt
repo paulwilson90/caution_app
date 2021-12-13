@@ -1,0 +1,2 @@
+AUXILARY BATTERY
+- auxiliary battery switch selected off

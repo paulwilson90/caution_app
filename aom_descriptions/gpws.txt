@@ -1,0 +1,2 @@
+GPWS
+- ground proximity warning system computer failure or system deenergised

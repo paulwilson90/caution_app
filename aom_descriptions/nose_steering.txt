@@ -1,0 +1,3 @@
+NOSE STEERING
+- nosewheel steering electronic control unit failure
+- nosewheel assumes shimmy damped, castor mode

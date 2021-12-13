@@ -1,0 +1,3 @@
+LEFT TRU HOT
+- applicable TRU overheated
+TRU must be shut down by pulling L TRU CB

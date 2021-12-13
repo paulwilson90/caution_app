@@ -1,0 +1,2 @@
+DC BUS
+- BBPU has detected a bus fault on main DC buses, and has inhibited the bus tie contactor from closing

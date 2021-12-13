@@ -1,0 +1,2 @@
+#1 DC GEN HOT
+- #1 dc generator windings overheating. Generator must be selected OFF

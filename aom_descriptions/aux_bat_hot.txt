@@ -1,0 +1,2 @@
+AUXILIARY BATTERY HOT
+- temperature of auxiliary battery has exceeded 65°C
