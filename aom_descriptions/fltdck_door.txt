@@ -1,0 +1,3 @@
+FLIGHT DECK DOOR
+- cockpit door is open and/or unlocked
+- access request has been made and the auto-unlock cycle is active

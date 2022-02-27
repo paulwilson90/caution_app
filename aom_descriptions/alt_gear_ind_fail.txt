@@ -1,0 +1,4 @@
+ALTERNATE GEAR INDICATOR FAIL
+- One or more of the alternate gear-locked-down indicator light circuit(s) are u/s
+- The failed indicator light can be identified by selected the alternate gear-locked-down indicator light switch;
+  the failed cirucit will not illuminate

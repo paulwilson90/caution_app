@@ -50,7 +50,7 @@
             ClearButton:
                 pos_hint: {"top": 1, "left": 1}
                 markup: True
-                text: ""
+                text: "[color=#FFF300]---------[/color]"
             ClearButton:
                 pos_hint: {"top": 1, "left": 1}
                 markup: True
@@ -80,7 +80,7 @@
                 font_size: '12sp'
                 id: flt_comp_pack_hot
                 halign: 'center'
-                text: "[color=#FFF300]FLT COMPT-\nPACK HOT[/color]"
+                text: "[color=#FFF300]FLT COMPT\nPACK HOT[/color]"
                 on_release:
                     app.change_screen('text_screen')
                     app.get_text('aom_descriptions/flt_compt_pack_hot.txt')
@@ -131,7 +131,7 @@
             ClearButton:
                 pos_hint: {"top": 1, "left": 1}
                 markup: True
-                text: ""
+                text: "[color=#FFF300]---------[/color]"
             ClearButton:
                 pos_hint: {"top": 1, "left": 1}
                 markup: True
@@ -196,7 +196,7 @@
                 markup: True
                 font_size: '12sp'
                 halign: 'center'
-                text: ""
+                text: "[color=#FFF300]---------[/color]"
             ClearButton:
                 pos_hint: {"top": 1, "left": 1}
                 markup: True
@@ -262,7 +262,7 @@
                 markup: True
                 font_size: '12sp'
                 halign: 'center'
-                text: ""
+                text: "[color=#FFF300]---------[/color]"
             ClearButton:
                 pos_hint: {"top": 1, "left": 1}
                 markup: True
@@ -325,13 +325,13 @@
                 opacity: 1 if self.state == 'normal' else .5
                 font_size: '12sp'
                 halign: 'center'
-                text: ""
+                text: "[color=#FFF300]---------[/color]"
             ClearButton:
                 pos_hint: {"top": 1, "left": 1}
                 markup: True
                 font_size: '12sp'
                 halign: 'center'
-                text: ""
+                text: "[color=#FFF300]---------[/color]"
             ClearButton:
                 pos_hint: {"top": 1, "left": 1}
                 markup: True
@@ -467,9 +467,13 @@
             ClearButton:
                 pos_hint: {"top": 1, "left": 1}
                 markup: True
+                opacity: 1 if self.state == 'normal' else .5
                 font_size: '12sp'
                 halign: 'center'
-                text: ""
+                text: "[color=#FFF300]FLTDK\nDOOR[/color]"
+                on_release:
+                    app.change_screen('text_screen')
+                    app.get_text('aom_descriptions/fltdk_door.txt')
             ClearButton:
                 pos_hint: {"top": 1, "left": 1}
                 markup: True
@@ -612,17 +616,17 @@
                 markup: True
                 font_size: '12sp'
                 halign: 'center'
-                text: ""
+                text: "[color=#FFF300]---------[/color]"
             ClearButton:
                 pos_hint: {"top": 1, "left": 1}
                 markup: True
                 opacity: 1 if self.state == 'normal' else .5
                 font_size: '12sp'
                 halign: 'center'
-                text: "[color=#FFF300]AIR COND\nPACK HOT[/color]"
+                text: "[color=#FFF300]CABIN\nPACK HOT[/color]"
                 on_release:
                     app.change_screen('text_screen')
-                    app.get_text('aom_descriptions/air_cond_pack_hot.txt')
+                    app.get_text('aom_descriptions/cabin_pack_hot.txt')
             ClearButton:
                 pos_hint: {"top": 1, "left": 1}
                 markup: True
@@ -648,7 +652,7 @@
                 markup: True
                 font_size: '12sp'
                 halign: 'center'
-                text: ""
+                text: "[color=#FFF300]---------[/color]"
             ClearButton:
                 pos_hint: {"top": 1, "left": 1}
                 markup: True
@@ -819,7 +823,7 @@
                 markup: True
                 font_size: '12sp'
                 halign: 'center'
-                text: ""
+                text: "[color=#FFF300]---------[/color]"
             ClearButton:
                 pos_hint: {"top": 1, "left": 1}
                 markup: True
@@ -862,7 +866,7 @@
                 opacity: 1 if self.state == 'normal' else .5
                 font_size: '12sp'
                 halign: 'center'
-                text: ""
+                text: "[color=#E10000]---------[/color]"
             ClearRedButton:
                 pos_hint: {"top": 1, "left": 1}
                 markup: True
