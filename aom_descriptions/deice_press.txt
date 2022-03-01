@@ -1,2 +1,3 @@
 DEICE PRESSURE
-- pneumatic pressure within the deice system below 5.5psi. Pressure is sensed at the passenger door seal supply line.
+- pneumatic pressure within the deice system below 5.5psi.
+  Pressure is sensed at the passenger door seal supply line.

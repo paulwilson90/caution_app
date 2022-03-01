@@ -1,5 +1,7 @@
 #2 BLEED HOT
-- overhead condition (over 290 degrees) in related bleed air supply duct downstream of pressure regulator and shut-off
-valve. Affected PSRV and high pressure bleed valve closes to cut off hot air supply to duct (bleed supply to deicing
-system via low pressure port is unaffected). When temperature drops below the overtemperature level, bleed air
-operation in affected nacelle is restored and light extinguishes.
+- overhead condition (over 290 degrees) in related bleed air supply duct downstream
+ of pressure regulator and shut-off valve.
+ Affected PSRV and high pressure bleed valve closes to cut off hot air supply to duct
+ (bleed supply to deicing system via low pressure port is unaffected).
+ When temperature drops below the overtemperature level, bleed air operation in affected
+ nacelle is restored and light extinguishes.

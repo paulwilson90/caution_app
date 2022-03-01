@@ -1,29 +1,9 @@
 FLIGHT DATA RECORDER
-The digital flight data recorder system assesses,
-measures and records parameters of flight for subse-
-quent analysis or investigation of incidents or acci-
-dents. The system consists of a crash protected flight
-data tape recorder mounted in the tail cone, an ac-
-quisition/measurement unit mounted on the avionics
-rack, a three axis accelerometer located on the rear
-spar, and a control panel located on the overhead
-console in the flight compartment. The system is en-
-ergized when the anti ---collision lights are on and the
-aircraft electrical system is powered. The system is
-also energized without the anti ---collision lights being
-turned on when the aircraft leaves the ground. A FLT
-DATA RECORDER caution light on the caution lights
-panel illuminates whenever the flight data recorder is
-inoperative.
-Data is recorded on a mylar based magnetic record-
+the flight data recorder is inoperative. Data is recorded on a mylar based magnetic record-
 ing tape to provide a crash ---survivable record of criti-
 cal flight parameters for the previous 25 hours. Play-
 back of recorded information is only possible by
-maintenance personnel. The flight data tape record-
-er is equipped with an underwater locater beacon
-that automatically emits a sonar ’ping’ when the unit
-is immersed in water.
-For system test select the FLIGHT DATA RECORDER
+maintenance personnel. For system test select the FLIGHT DATA RECORDER
 switch on the overhead console to the momentary
 GND TEST. The FLT DATA RECORDER caution light
 will go out to indicate serviceability.

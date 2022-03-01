@@ -1,3 +1,4 @@
 FLIGHT COMPARTMENT DUCT HOT
-- indicated overheat (over 88°C) in flight compartment supply duct. Pack temperature trim valves are driven to maximum cooling position
+- indicated overheat (over 88°C) in flight compartment supply duct.
+  Pack temperature trim valves are driven to maximum cooling position
 - light extinguishes when temperature drops below 82°C and normal operation resumes
